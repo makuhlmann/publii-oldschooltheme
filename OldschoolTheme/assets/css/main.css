@@ -1,5 +1,18 @@
 /* 90's Simplified Theme for Publii */
 
+/* Images */
+img {
+    border: 1px solid #000;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+/* Related posts (stacked for 90's style) */
+#related-posts > div {
+    margin-bottom: 10px;
+}
+
 /* Reset & Body Styles */
 body {
     margin: 4px auto;
@@ -18,7 +31,6 @@ body {
     border: solid 3px;
     border-color: #003366;
     margin: 0 auto;
-    font-size: 0px; /* Fixes IE5 margin bug */
 }
 
 /* Main container for centering content */
@@ -274,37 +286,3 @@ body {
     display: block;
 }
 
-/* Images */
-img {
-    border: 1px solid #000;
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
-}
-
-/* Related posts (stacked for 90's style) */
-#related-posts > div {
-    margin-bottom: 10px;
-}
-
-/* Separator styles */
-hr {
-    /*border: 0;
-    height: 2px;
-    background-color: #000;
-    margin: 20px 0;*/
-}
-
-/* Link styling reminiscent of old browsers */
-a:link {
-    color: #0000EE;
-}
-
-a:visited {
-    color: #551A8B;
-}
-
-a:hover {
-    color: #000000;
-    text-decoration: underline;
-}
