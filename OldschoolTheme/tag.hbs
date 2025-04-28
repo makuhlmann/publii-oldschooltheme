@@ -1,7 +1,7 @@
 {{! Tag page; this file renders a tag page containing a list of the latest posts }}
 {{> head}}
 {{> navbar}}
-<main>
+<div class="main">
    
    {{! indicates the tag's context}}
       {{#tag}}
@@ -123,7 +123,7 @@
    {{/each}}
    {{! /loop that generates a list of posts }}
    
-</main>
+</div>
 
 {{> pagination}}
 {{> footer}}

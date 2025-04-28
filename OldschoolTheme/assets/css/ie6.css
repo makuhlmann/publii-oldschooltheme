@@ -1,0 +1,15 @@
+/* IE 5.5 & 6 compatibility */
+
+
+.sitecontent {
+    width: expression(document.body.clientWidth>1280?"1280px":"auto");
+}
+
+.main {
+    width: expression(document.body.clientWidth>1024?"1024px":"90%");
+}
+
+/* Clearfix */
+.clearfix {
+    *zoom: 1;
+}

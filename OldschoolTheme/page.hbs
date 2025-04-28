@@ -1,23 +1,17 @@
 {{> head}}
 {{> navbar}}
 
-{{#post}}
-<header>
+{{#page}}
+<div class="header">
     <h1>{{title}}</h1>
     <p>
         <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
             {{date createdAt}}
         </time>
-        {{#if mainTag}}
-        | 
-        <a href="{{ mainTag.url }}" class="post__maintag">
-            {{mainTag.name }}
-        </a>
-        {{/if}}
     </p>
-</header>
+</div>
 
-<main>
+<div class="main">
     {{! featured image }}
     {{#featuredImage}}
     {{! check if an image exists }}
@@ -52,9 +46,9 @@
         {{{text}}}
     </div>
     {{! /post body }}
-</main>
-{{/post}}
+</div>
+{{/page}}
 
-<footer>
+<div class="footer">
     {{> footer}}
-</footer>
+</div>

@@ -1,7 +1,7 @@
 {
-  "name": "netdream",
-  "version": "1.0.0.0",
-  "author": "Jordan Wages <https://jordanwages.com/>",
+  "name": "oldschooltheme",
+  "version": "1.0.1.0",
+  "author": "makuhlmann <https://github.com/makuhlmann/> & Jordan Wages <https://jordanwages.com/>",
   "renderer": {
     "relatedPostsNumber": 3,
     "renderRelatedPosts": true,
@@ -78,151 +78,11 @@
   ],
   "customConfig": [
     {
-      "name": "mainWidth",
-      "label": "Main Width",
-      "group": "Layout",
-      "value": "85%",
-      "type": "text"
-    },
-    {
-      "name": "navbarBackgroundColor",
-      "label": "Navbar Background Color",
-      "group": "Header",
-      "value": "#003366",
-      "type": "colorpicker"
-    },
-    {
-      "name": "navbarTextColor",
-      "label": "Navbar Text Color",
-      "group": "Header",
-      "value": "#FFFFFF",
-      "type": "colorpicker"
-    },
-    {
-      "name": "menubarBackgroundColor",
-      "label": "Menubar Background Color",
-      "group": "Menu",
-      "value": "#2F685E",
-      "type": "colorpicker"
-    },
-    {
-      "name": "menubarTextColor",
-      "label": "Menubar Text Color",
-      "group": "Menu",
-      "value": "#FFFFFF",
-      "type": "colorpicker"
-    },
-    {
-      "name": "bodyBackgroundColor",
-      "label": "Body Background Color",
-      "group": "Body",
-      "value": "#C0C0C0",
-      "type": "colorpicker"
-    },
-    {
-      "name": "bodyTextColor",
-      "label": "Body Text Color",
-      "group": "Body",
-      "value": "#000000",
-      "type": "colorpicker"
-    },
-    {
-      "name": "bodyLinkColor",
-      "label": "Body Link Color",
-      "group": "Body",
-      "value": "#0000EE",
-      "type": "colorpicker"
-    },
-    {
-      "name": "bodyVisitedLinkColor",
-      "label": "Body Visited Link Color",
-      "group": "Body",
-      "value": "#551A8B",
-      "type": "colorpicker"
-    },
-    {
-      "name": "bodyHoverLinkColor",
-      "label": "Body Hover Link Color",
-      "group": "Body",
-      "value": "#000000",
-      "type": "colorpicker"
-    },
-    {
-      "name": "footerLinkColor",
-      "label": "Footer Link Color",
-      "group": "Footer",
-      "value": "#FFFECC",
-      "type": "colorpicker"
-    },
-    {
-      "name": "footerVisitedLinkColor",
-      "label": "Footer Visited Link Color",
-      "group": "Footer",
-      "value": "#A87CA8",
-      "type": "colorpicker"
-    },
-    {
-      "name": "footerHoverLinkColor",
-      "label": "Footer Hover Link Color",
-      "group": "Footer",
-      "value": "#B3B28C",
-      "type": "colorpicker"
-    },
-    {
-      "name": "headerBackgroundColor",
-      "label": "Header Background Color",
-      "group": "Header",
-      "value": "#3B4C5A",
-      "type": "colorpicker"
-    },
-    {
-      "name": "headerTextColor",
-      "label": "Header Text Color",
-      "group": "Header",
-      "value": "#F8F8F0",
-      "type": "colorpicker"
-    },
-    {
       "name": "headerLogoText",
       "label": "Header Logo Text",
       "group": "Header",
       "value": "Your Website Title or Logo Text",
       "type": "text"
-    },
-    {
-      "name": "footerBackgroundColor",
-      "label": "Footer Background Color",
-      "group": "Footer",
-      "value": "#003366",
-      "type": "colorpicker"
-    },
-    {
-      "name": "footerTextColor",
-      "label": "Footer Text Color",
-      "group": "Footer",
-      "value": "#FFFFFF",
-      "type": "colorpicker"
-    },
-    {
-      "name": "submenuBackgroundColor",
-      "label": "Submenu Background Color",
-      "group": "Menu",
-      "value": "#2F685E",
-      "type": "colorpicker"
-    },
-    {
-      "name": "submenuTextColor",
-      "label": "Submenu Text Color",
-      "group": "Menu",
-      "value": "#FFFFFF",
-      "type": "colorpicker"
-    },
-    {
-      "name": "borderColor",
-      "label": "Border Color",
-      "group": "Layout",
-      "value": "#272727",
-      "type": "colorpicker"
     },
     {
       "name": "landingPageTitle",

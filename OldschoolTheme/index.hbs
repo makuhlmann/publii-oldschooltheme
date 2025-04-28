@@ -1,12 +1,12 @@
 {{> head}}
 {{> navbar}}
 
-<header>
+<div class="header">
     <h1>{{@config.custom.landingPageTitle}}</h1>
     <p class="subtitle">{{@config.custom.landingPageSubtitle}}</p>
-</header>
+</div>
 
-<main>
+<div class="main">
     <h1> {{ translate "index.aboutMe" }} </h1>
     {{{@config.custom.landingPageText}}}
     <hr />
@@ -35,8 +35,8 @@
         {{/each}}
     </ul>
     {{> pagination}}
-</main>
+</div>
 
-<footer>
+<div class="footer">
     {{> footer}}
-</footer>
+</div>

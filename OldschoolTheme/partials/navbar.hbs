@@ -1,6 +1,6 @@
-<header class="navbar">
+<div class="navbar">
     <div class="navbar__logo">
-        <a id="logo" href="{{@website.url}}">
+        <a class="navbar-title" href="{{@website.url}}">
             {{#if @website.logo}}
             <img src="{{@website.logo}}" alt="{{@website.name}}">
             {{else}}
@@ -14,4 +14,4 @@
     {{/if}}
 
     {{{@customSearchInput}}}
-</header>
+</div>

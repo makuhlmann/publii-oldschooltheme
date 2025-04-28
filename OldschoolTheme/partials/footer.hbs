@@ -1,0 +1,30 @@
+<div class="footer">
+    <!--Footer-->
+    {{{@config.custom.footerText}}}
+    <div>
+                                               
+        <a href="http://ftp.mozilla.org/pub/firefox/releases/" target="_blank">
+            <img src="./assets/img/firefox2.gif" alt="Get Firefox!" />
+        </a>
+        <a href="http://windowsupdaterestored.com/en/ie.htm" target="_blank">
+            <img src="./assets/img/ie.gif" />
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img src="./assets/img/vcss.png" alt="Valid CSS!">
+        </a>
+    </div>
+</div> <!--Index-->
+
+<!--<script async src="{{js "scripts.js"}}"></script>-->
+
+{{! code injection by a Custom HTML tool }}
+{{{@footerCustomCode}}}
+{{! /code injection by a Custom HTML tool }}
+
+{{! helper for creating footer output with Publii-related tags. Currently used for GDPR cookies popup }}
+{{{ publiiFooter }}}
+{{! /helper for creating footer output with Publii-related tags. Currently used for GDPR cookies popup }}
+
+</div>
+</body>
+</html>

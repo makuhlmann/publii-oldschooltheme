@@ -1,0 +1,7 @@
+/* IE5 header rendering issue */
+
+.header {
+    margin-top: -19px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
