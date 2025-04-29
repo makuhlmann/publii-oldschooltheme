@@ -5,9 +5,13 @@
 <div class="header">
     <h1>{{title}}</h1>
     <p>
-        <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
-            {{date createdAt}}
-        </time>
+        {{#if @config.page.pageSubtitle}}
+            {{@config.page.pageSubtitle}}
+        {{else}}
+            <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
+                {{date createdAt}}
+            </time>
+        {{/if}}
     </p>
 </div>
 

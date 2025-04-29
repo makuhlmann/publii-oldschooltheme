@@ -1,4 +1,4 @@
-/* IE 5.5 & 6 compatibility */
+/* IE 5.5 - 7 compatibility */
 
 
 .sitecontent {
@@ -12,4 +12,10 @@
 /* Clearfix */
 .clearfix {
     *zoom: 1;
+}
+
+/* IE7 absolute alignment fix */
+.submenu {
+    left: 0;
+    margin-top: 16px;
 }

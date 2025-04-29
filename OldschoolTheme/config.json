@@ -184,6 +184,12 @@
           "value": 0
         }
       ]
+    },
+    {
+        "name": "postSubtitle",
+        "label": "Set custom post subtitle",
+        "value": "",
+        "type": "text"
     }
   ],
   "pageConfig": [
@@ -218,6 +224,12 @@
           "value": 0
         }
       ]
+    },
+    {
+        "name": "pageSubtitle",
+        "label": "Set custom page subtitle",
+        "value": "",
+        "type": "text"
     }
   ],
   "tagConfig": [

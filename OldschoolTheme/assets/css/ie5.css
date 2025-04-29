@@ -5,3 +5,11 @@
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+.submenu {
+    display: none;
+}
+
+.footer {
+    margin-bottom: -10px;
+}

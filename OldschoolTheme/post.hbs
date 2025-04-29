@@ -5,9 +5,13 @@
 <div class="header">
     <h1>{{title}}</h1>
     <p>
-        <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
-            {{date createdAt}}
-        </time>
+        {{#if @config.post.postSubtitle}}
+            {{@config.post.postSubtitle}}
+        {{else}}
+            <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
+                {{date createdAt}}
+            </time>
+        {{/if}}
         {{#if mainTag}}
         | 
         <a href="{{ mainTag.url }}" class="post__maintag">
