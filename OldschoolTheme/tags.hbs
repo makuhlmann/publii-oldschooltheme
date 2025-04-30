@@ -1,16 +1,13 @@
 {{! Tags page; this file renders a page containing a list of all the tags }}
 {{> head}}
 {{> navbar}}
-<div class="main">
-   
-   <h1>
-      {{ translate 'tags.tagsPageTitle' }}
-      <sup>({{tagsNumber}})</sup>
-   </h1>
 
-   <p>
-      {{ translate 'tags.description' }}
-   </p>
+<div class="header">
+    <h1>{{ translate 'tags.tagsPageTitle' }} <sup>({{tagsNumber}})</sup></h1>
+    <p class="subtitle">{{ translate 'tags.description' }}</p>
+</div>
+
+<div class="main">
 
    <ul>
       {{! loop that generates a list of tags }}

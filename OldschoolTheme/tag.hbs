@@ -1,10 +1,21 @@
 {{! Tag page; this file renders a tag page containing a list of the latest posts }}
 {{> head}}
 {{> navbar}}
+
+{{! indicates the tag's context}}
+{{#tag}}
+
+<div class="header">
+    <h1>{{name}}
+    {{#if tagViewConfig.displayPostCounter}}
+       <sup>({{postsNumber}})</sup>
+    {{/if}}</h1>
+    {{#if description}}
+    <p class="subtitle">{{{description}}}</p>
+    {{/if}}
+</div>
+
 <div class="main">
-   
-   {{! indicates the tag's context}}
-      {{#tag}}
 
          {{! tag featured image }}
          {{#featuredImage}}
@@ -36,22 +47,7 @@
             {{/if}}
             {{! /checks if an image exists }}
          {{/featuredImage}}
-         {{! /tag featured image }}
-
-         <h1>
-            {{name}}
-            {{! check if a 'Display post counter' tag option is enabled }}
-            {{#if tagViewConfig.displayPostCounter}}
-               <sup>({{postsNumber}})</sup>
-            {{/if}}
-            {{! /check if a 'Display post counter' tag option is enabled }} 
-         </h1>
-
-         {{! check if a tag description exists }}
-         {{#if description}}
-            <div> {{{description}}} </div>
-         {{/if}}
-         {{! /check if a tag description exists }}  
+         {{! /tag featured image }} 
 
       {{/tag}}
    {{! /indicates the tag's context }}
@@ -94,12 +90,14 @@
 
          {{! post author }}
          {{#author}}
-            <img  
-               src="{{avatarImage.url}}" 
-               {{lazyload "lazy"}} 
-               alt="{{avatarImage.alt}}" 
-               height="{{avatarImage.height}}"  
-               width="{{avatarImage.width}}">
+            {{#if avatar}}
+                <img  
+                   src="{{avatarImage.url}}" 
+                   {{lazyload "lazy"}} 
+                   alt="{{avatarImage.alt}}" 
+                   height="{{avatarImage.height}}"  
+                   width="{{avatarImage.width}}">
+            {{/if}}
             <a href="{{url}}">{{name}}</a>
          {{/author}}
          {{! /post author }}
@@ -107,7 +105,7 @@
          {{! main tag - if not selected, the first tag in the list of all tags
          will be displayed }}
          {{#if mainTag}}
-            <a href="{{mainTag.url}}">{{mainTag.name}}</a>
+            | <a href="{{mainTag.url}}">{{mainTag.name}}</a>
          {{/if}}
          {{! /main tag }}
 
